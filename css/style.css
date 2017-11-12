@@ -1,0 +1,41 @@
+header,
+footer{
+    display: flex;
+    flex-direction: row;
+    height: 8vh;
+    background-color: #3F51B5;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+}
+
+body{
+    margin: 0;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+content{
+    flex: 1;
+}
+
+.div-section{
+    display: flex;
+    align-items: center;
+}
+
+.div-section h1,
+.div-section h3{
+    color: #fff;
+    font-family: 'Dosis', sans-serif;
+    padding: 0 15px 0 15px;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover{
+    border-bottom: 5px solid #EAAB1C;
+}
+
