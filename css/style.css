@@ -2,11 +2,19 @@ header,
 footer{
     display: flex;
     flex-direction: row;
-    height: 8vh;
     background-color: #3F51B5;
     justify-content: space-between;
     align-items: center;
     padding: 15px;
+}
+
+footer{
+    height: 3vh;
+    min-height: 30px;
+}
+header{
+    height: 5vh;
+    min-height: 45px;
 }
 
 body{
@@ -26,9 +34,32 @@ content{
 
 .div-section h1,
 .div-section h3{
+    margin: 0;
+}
+
+.div-section h1,
+.div-section h3,
+.site-title,
+.site-description{
     color: #fff;
     font-family: 'Dosis', sans-serif;
-    padding: 0 15px 0 15px;
+}
+
+.site-title{
+    font-size: 24pt;
+    font-weight: bold;
+}
+
+.site-description{
+    font-size: 14pt;
+}
+
+.div-section a,
+.site-title{
+    margin: 0 15px 0 15px;
+}
+.site-description{
+    margin: 0 5px 0 5px;
 }
 
 a {
