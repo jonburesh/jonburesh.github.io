@@ -24,24 +24,47 @@ body{
     flex-direction: column;
 }
 content{
+    display: flex;
     flex: 1;
 }
 
-.div-section{
+.flex{
     display: flex;
+}
+
+.center{
+    justify-content: center;
     align-items: center;
 }
 
-.div-section h1,
-.div-section h3{
+.column{
+    flex-direction: column;
+}
+
+.row{
+    flex-direction: row;
+}
+
+.light,
+.light a{
+    color: #fff;
+}
+
+.dark,
+.dark a{
+    color: #444444;
+}
+
+.flex h1,
+.flex h3{
     margin: 0;
 }
 
-.div-section h1,
-.div-section h3,
+.flex p,
+.flex h1,
+.flex h3,
 .site-title,
 .site-description{
-    color: #fff;
     font-family: 'Dosis', sans-serif;
 }
 
@@ -54,7 +77,12 @@ content{
     font-size: 14pt;
 }
 
-.div-section a,
+.site-page{
+    padding: 10px;
+    width: 100%;
+}
+
+.flex a,
 .site-title{
     margin: 0 15px 0 15px;
 }
