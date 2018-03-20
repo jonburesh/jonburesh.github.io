@@ -3,6 +3,10 @@
         <link rel="stylesheet" type="text/css" href="css/style.css">
         <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
         <meta name="theme-color" content="#3F51B5">
+        <!-- controller js -->
+        <script src = "js/main.js"></script>
+        <!-- font awesome -->
+        <script defer src="js/fontawesome-all.js"></script>
     </head>
     <body>
         <header>
@@ -10,24 +14,53 @@
             <div class="flex row center light">
                 <p class="site-title">Jon Buresh</p>
                 <p class="site-description">applications dev</p>
-                <a href="#"><h3>professional</h3></a>
-                <a href="#"><h3>personal</h3></a>
+                <a href="#" onclick="page_selected('page-personal');"><h3>personal</h3></a>
+                <a href="#" onclick="page_selected('page-professional');"><h3>professional</h3></a>
             </div>
             <!-- right section -->
             <div class="flex row center light">
-                <a href="http://twitter.com/jon_buresh" target="_blank"><h3>twitter</h3></a>
+                <a href="http://twitter.com/jon_buresh" target="_blank"><h3><i class="fab fa-twitter"></i> twitter</h3></a>
+                <a href="https://www.linkedin.com/in/jonathan-buresh-31b4152b/" target="_blank"><h3><i class="fab fa-linkedin"></i> linkedIn</h3></a>
             </div>
         </header>
         <content>
-            <div id="page-personal" class="site-page flex column center dark">
-                <h1>WIP</h1>
-                <p>under construction</p>
+            <div id="page-personal" class="site-page" style="display:block;">
+                <div class="site-section flex column center dark">
+                    <h1>Personal</h1>
+                </div>
+            </div>
+            <div id="page-professional" class="site-page" style="display:none;">
+                <div class="site-section flex column center dark">
+
+                    <h1>Professional Experience</h1>
+
+                    <!-- Aramark -->
+                    <div class="card">
+                        <h3>Associate Applications Developer - Aramark Uniform Services</h3>
+                        <p>May 2015 - Present</p>
+                        <p>Developing business applications, services, and websites for partner communications and internal teams. Focused on Oracle's SOA, Webcenter, and Webcenter Portal frameworks in addition to standard (html, css, js) web development.</p>
+                    </div>
+
+                    <!-- Konami -->
+                    <div class="card">
+                        <h3>Quality Assurance Analyst - Konami Digital Entertainment</h3>
+                        <p>September 2014 - May 2015</p>
+                    </div>
+
+                    <!-- EMC -->
+                    <div class="card">
+                        <h3>Interactive Designer - Emergent Media Center</h3>
+                        <p>September 2010 - December 2012</p>
+                    </div>
+                </div>
             </div>
         </content>
+        <!--
         <footer>
             <div class="flex light">
                 <p class="site-description">thanks for stopping by</p>
             </div>
         </footer>
+        -->
     </body>
 </html>
