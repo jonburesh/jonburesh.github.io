@@ -1,8 +1,14 @@
-function page_selected(id)
+var sitePages;
+var pageCount;
+
+function getPages()
 {
-    var sitePages = document.getElementsByClassName("site-page");
-    var pageCount = sitePages.length;
-    
+    sitePages = document.getElementsByClassName("site-page");
+    pageCount = sitePages.length;
+}
+
+function pageSelected(id)
+{
     for (i = 0; i < pageCount; i++) 
     {
         if (sitePages[i].id == id)
@@ -15,3 +21,5 @@ function page_selected(id)
         }
     }
 }
+
+getPages();
