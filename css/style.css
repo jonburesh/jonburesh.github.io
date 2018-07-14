@@ -117,10 +117,10 @@ content{
     height: 200px;
 }
 
-.tall-card .card-content.card-content p{
+.tall-card .card-content.card-content .card-description{
     display: none;
 }
-.tall-card .card-content.card-content.fullyExpanded p{
+.tall-card .card-content.card-content.fullyExpanded .card-description{
     display: initial;
 }
 
@@ -160,24 +160,45 @@ a{
 
 .card-badge{
     z-index: 1;
-    top: -20px;
-    right: 10px;
-    width: 50px;
-    height: 50px;
     position: absolute;
     background: white;
     border-radius: 25px;
     box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 }
 
+.large-badge{
+    top: -20px;
+    right: 10px;
+    width: 50px;
+    height: 50px;
+}
+
+.mini-badge{
+    bottom: 10px;
+    right: 10px;
+    width: 30px;
+    height: 30px;
+}
+
 .card-badge img{
-    width: 35px;
+    
     position: absolute;
     top: 50%;
     left: 50%;
+    
+}
+
+.large-badge img{
+    width: 35px;
     margin-top: -18px;
     margin-left: -20px;
 }
+.mini-badge img{
+    width: 20px;
+    margin-top: -9px;
+    margin-left: -11px;
+}
+
 
 .card-links{
     position: absolute;
