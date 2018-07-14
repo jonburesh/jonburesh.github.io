@@ -1,10 +1,26 @@
 var sitePages;
 var pageCount;
 
+
 function getPages()
 {
     sitePages = document.getElementsByClassName("site-page");
     pageCount = sitePages.length;
+}
+
+function setupCards()
+{
+    $('.card-content').click(function()
+    {
+        var cardTarget = $(this);
+        // set to expanded
+        cardTarget.toggleClass('expanded');
+        // set to fullyExpanded after short delay
+        setTimeout(function() 
+        { 
+            cardTarget.toggleClass('fullyExpanded'); 
+        }, 50);
+      });
 }
 
 function pageSelected(id)
@@ -23,3 +39,4 @@ function pageSelected(id)
 }
 
 getPages();
+setupCards();

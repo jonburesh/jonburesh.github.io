@@ -103,6 +103,27 @@ content{
     min-width: 250px;
 }
 
+.tall-card .card-content{
+    width:100%;
+    bottom: 0px;
+    position: absolute;
+    background-color: #fff;
+    height: 75px;
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+    cursor:pointer;
+}
+
+.tall-card .card-content.expanded{
+    height: 200px;
+}
+
+.tall-card .card-content.card-content p{
+    display: none;
+}
+.tall-card .card-content.card-content.fullyExpanded p{
+    display: initial;
+}
+
 .card{
     position: relative;
     background: #fff;
@@ -112,12 +133,16 @@ content{
     transition: all 0.3s cubic-bezier(.25,.8,.25,1);
 }
 
+a{
+    cursor:pointer;
+}
+
 .card:hover{
     box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 }
 
 .card-image{
-    min-height: 100px;
+    min-height: 325px;
 }
 
 .card-image img{
@@ -131,6 +156,27 @@ content{
 
 .card-content{
     position: relative;
+}
+
+.card-badge{
+    z-index: 1;
+    top: -20px;
+    right: 10px;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    background: white;
+    border-radius: 25px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.card-badge img{
+    width: 35px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -18px;
+    margin-left: -20px;
 }
 
 .card-links{
