@@ -74,6 +74,10 @@ content{
     font-family: 'Dosis', sans-serif;
 }
 
+h1{
+    padding: 20px;
+}
+
 .site-title{
     font-size: 24pt;
     font-weight: bold;
@@ -89,7 +93,10 @@ content{
 }
 
 .site-section{
-    padding: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .wide-card{
@@ -180,7 +187,7 @@ a{
     height: 30px;
 }
 
-.card-badge img{
+.card-badge img, .card-badge svg{
     
     position: absolute;
     top: 50%;
@@ -197,6 +204,15 @@ a{
     width: 20px;
     margin-top: -9px;
     margin-left: -11px;
+}
+.mini-badge svg{
+    margin-top: -8px;
+    margin-left: -8px;
+}
+
+.mini-badge .svg-inline--fa.fa-lg{
+    margin-top: -10px;
+    margin-left: -10px;
 }
 
 
