@@ -20,7 +20,7 @@ function setupCards()
         { 
             cardTarget.toggleClass('fullyExpanded'); 
         }, 50);
-      });
+    });
 }
 
 function pageSelected(id)

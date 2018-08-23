@@ -39,6 +39,17 @@ content{
     align-items: center;
 }
 
+.left{
+    justify-content: flex-start;
+    align-items: flex-start;
+    
+}
+
+.right{
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
 .column{
     flex-direction: column;
     flex-wrap: wrap;
@@ -118,17 +129,21 @@ h1{
     height: 75px;
     transition: all 0.3s cubic-bezier(.25,.8,.25,1);
     cursor:pointer;
+    overflow: hidden;
 }
 
 .tall-card .card-content.expanded{
     height: 200px;
 }
 
-.tall-card .card-content.card-content .card-description{
+.tall-card .card-content.card-content .card-description, .tall-card .card-content.card-content .card-extras{
     display: none;
 }
 .tall-card .card-content.card-content.fullyExpanded .card-description{
     display: initial;
+}
+.tall-card .card-content.card-content.fullyExpanded .card-extras{
+    display: flex;
 }
 
 .card{
@@ -181,24 +196,25 @@ a{
 }
 
 .mini-badge{
-    bottom: 10px;
-    right: 10px;
+    z-index: 1;
     width: 30px;
     height: 30px;
+    border-radius: 25px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    display: block;
+    margin: 3px;
 }
 
 .card-badge img, .card-badge svg{
-    
     position: absolute;
     top: 50%;
     left: 50%;
-    
 }
 
 .large-badge img{
     width: 35px;
     margin-top: -18px;
-    margin-left: -20px;
+    margin-left: -18px;
 }
 .mini-badge img{
     width: 20px;
@@ -206,18 +222,23 @@ a{
     margin-left: -11px;
 }
 .mini-badge svg{
-    margin-top: -8px;
-    margin-left: -8px;
+    margin-top: 7px;
+    margin-left: 2px;
 }
 
 .mini-badge .svg-inline--fa.fa-lg{
-    margin-top: -10px;
-    margin-left: -10px;
+    margin-top: 4px;
+    margin-left: 0px;
 }
 
 
-.card-links{
+.card-extras{
+    height: 30px;
+    width: 100%;
     position: absolute;
+    padding: 5px;
+    bottom: 0;
+    box-sizing: border-box;
 }
 
 .tall-card .card-content a{
@@ -242,6 +263,10 @@ a {
 
 a:hover{
     border-bottom: 5px solid #EAAB1C;
+}
+
+.card-extras a:hover{
+    border-bottom: none;
 }
 
 /*
