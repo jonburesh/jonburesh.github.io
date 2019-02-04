@@ -299,7 +299,7 @@ SCREEN SIZE
 
     .site-page .row
     {
-        flex-direction: column;
+        /*flex-direction: column;*/
     }
 
     .site-nav h3
