@@ -144,6 +144,7 @@ h1{
 }
 .tall-card .card-content.card-content.fullyExpanded .card-extras{
     display: flex;
+    align-content: center;
 }
 
 .card{
@@ -233,7 +234,7 @@ a{
 
 
 .card-extras{
-    height: 30px;
+    height: 45px;
     width: 100%;
     position: absolute;
     padding: 5px;
@@ -300,6 +301,11 @@ SCREEN SIZE
     .site-page .row
     {
         /*flex-direction: column;*/
+    }
+
+    .card-extras.row
+    {
+        flex-direction: row;
     }
 
     .site-nav h3
