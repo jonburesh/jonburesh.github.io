@@ -224,12 +224,12 @@ a{
 }
 .mini-badge svg{
     margin-top: 7px;
-    margin-left: 2px;
+    
 }
 
 .mini-badge .svg-inline--fa.fa-lg{
     margin-top: 4px;
-    margin-left: 0px;
+    margin-left: 1px;
 }
 
 
