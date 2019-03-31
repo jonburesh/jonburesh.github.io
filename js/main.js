@@ -13,6 +13,7 @@ function setupCards()
     $('.card-content').click(function()
     {
         var cardTarget = $(this);
+        cardTarget.addClass('tapped');
         // set to expanded
         cardTarget.toggleClass('expanded');
         // set to fullyExpanded after short delay

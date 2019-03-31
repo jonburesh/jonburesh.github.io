@@ -129,7 +129,7 @@ h1{
     height: 75px;
     transition: all 0.3s cubic-bezier(.25,.8,.25,1);
     cursor:pointer;
-    overflow: hidden;
+    /*overflow: hidden;*/
 }
 
 .tall-card .card-content.expanded{
@@ -145,6 +145,21 @@ h1{
 .tall-card .card-content.card-content.fullyExpanded .card-extras{
     display: flex;
     align-content: center;
+}
+
+.tall-card .card-content.card-content.expanded .card-tip{
+    display: none;
+}
+
+.tall-card .card-content.card-content.tapped .card-tip{
+    display: none;
+}
+
+.tall-card .card-content.card-content .card-tip {
+    position: absolute;
+    width:100%;
+    z-index: 5;
+    bottom: 55px;
 }
 
 .card{
@@ -231,7 +246,6 @@ a{
     margin-top: 4px;
     margin-left: 1px;
 }
-
 
 .card-extras{
     height: 45px;
