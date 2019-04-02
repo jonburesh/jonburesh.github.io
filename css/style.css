@@ -80,7 +80,6 @@ content{
 .flex h1,
 .flex h3,
 .flex h2,
-.site-title,
 .site-description{
     font-family: 'Dosis', sans-serif;
 }
@@ -90,8 +89,9 @@ h1{
 }
 
 .site-title{
-    font-size: 24pt;
-    font-weight: bold;
+    font-size: 32pt;
+    /*font-weight: bold;*/
+    font-family: 'Permanent Marker', cursive !important; 
 }
 
 .site-description{
