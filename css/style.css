@@ -103,6 +103,10 @@ h1{
     background: #e6e6e6;
 }
 
+.current-page {
+    border-bottom: 5px solid #EAAB1C;
+}
+
 .site-section{
     padding-left: 50px;
     padding-right: 50px;
@@ -288,8 +292,8 @@ a:hover{
 SCREEN SIZE
 */
 
-/* larger than 768px */
-@media screen and (max-width: 768px)
+/* smaller than 1024px */
+@media screen and (max-width: 1024px)
 {
     /*
     #social-nav
@@ -303,13 +307,21 @@ SCREEN SIZE
     }
 }
   
-/*smaller than 1023px */
-@media screen and (max-width: 480px) 
+/*smaller than 545px */
+@media screen and (max-width: 545px) 
 {
     .site-title
     {
-        font-size: 14pt;
+        font-size: 28pt;
+        text-align: center;
+        width: 100%;
         margin: 0 10px 0 10px;
+    }
+
+    header
+    {
+        height: 8vh;
+
     }
 
     .site-page .row
@@ -324,7 +336,7 @@ SCREEN SIZE
 
     .site-nav h3
     {
-        font-size: 12pt;
+        font-size: 14pt;
     }
 
     h1

@@ -17,25 +17,15 @@
             <div class="flex row center light site-nav">
                 <p class="site-title">Jon Buresh</p>
                 <!--<p class="site-description">dev portfolio</p>-->
-                <a href="#" onclick="pageSelected('page-personal');"><h3>dev portfolio</h3></a>
-                <a href="#" onclick="pageSelected('page-professional');"><h3>resume</h3></a>
+                <a href="#" id="personal-button" onclick="pageSelected('page-personal', this);" class="current-page"><h3>portfolio</h3></a>
+                <a href="#" id="experience-button" onclick="pageSelected('page-professional', this);"><h3>experience</h3></a>
             </div>
-
-            <!-- right section 
-            <div id="social-nav" class="flex row center light">
-                
-                <a href="http://twitter.com/jon_buresh" target="_blank"><h3><i class="fab fa-twitter"></i> twitter</h3></a>
-                <a href="https://www.linkedin.com/in/jonathan-buresh-31b4152b/" target="_blank"><h3><i class="fab fa-linkedin"></i> linkedIn</h3></a>
-                <a href="https://github.com/jonburesh/" target="_blank"><h3><i class="fab fa-github"></i> github</h3></a>
-            </div>-->
         </header>
         <content>
             <div id="page-personal" class="site-page" style="display:block;">
                 <div class="site-section flex column center dark">
-                    <!--<h1>Personal</h1>-->
 
                     <h1>Game Development</h1>
-
                     <div class="flex row dark center">
                         <!-- DotD -->
                         <div class="card tall-card">
@@ -164,7 +154,6 @@
                 <div class="site-section flex column center dark">
 
                     <h1>Professional Experience</h1>
-
                     <!-- Aramark -->
                     <div class="card wide-card">
                         <div class="card-content">
@@ -204,9 +193,9 @@
             </div>
         </content>
         
+        <!-- footer section -->
         <footer>
             <div class="flex light">
-                <!-- right section -->
                 <div id="social-nav" class="flex row center light">
                     <a href="http://twitter.com/jon_buresh" target="_blank"><h3><i class="fab fa-twitter"></i> twitter</h3></a>
                     <a href="https://www.linkedin.com/in/jonathan-buresh-31b4152b/" target="_blank"><h3><i class="fab fa-linkedin"></i> linkedIn</h3></a>
