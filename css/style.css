@@ -91,7 +91,7 @@ h1{
 .site-title{
     font-size: 32pt;
     /*font-weight: bold;*/
-    font-family: 'Permanent Marker', cursive !important; 
+    font-family: 'Nanum Pen Script', cursive !important; 
 }
 
 .site-description{
@@ -273,7 +273,7 @@ a{
     margin: 0 15px 0 15px;
 }
 
-.flex .tall-card  a{
+.flex .tall-card a{
     margin: 0;
 }
 
