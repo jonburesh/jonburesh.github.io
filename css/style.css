@@ -272,6 +272,11 @@ a{
 .site-title{
     margin: 0 15px 0 15px;
 }
+
+.flex .tall-card  a{
+    margin: 0;
+}
+
 .site-description{
     margin: 0 5px 0 5px;
 }
