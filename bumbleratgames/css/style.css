@@ -1,0 +1,425 @@
+header,
+footer{
+    display: flex;
+    flex-direction: row;
+    background-color: #FFB900;
+    align-items: center;
+    padding: 15px;
+}
+
+footer{
+    min-height: 300px;
+    justify-content: center;
+}
+header{
+    height: 5vh;
+    min-height: 85px;
+    justify-content: space-between;
+}
+
+body{
+    margin: 0;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    height: fit-content;
+}
+content{
+    display: flex;
+    flex: 1;
+}
+
+.site-nav{
+    width: 100%;
+}
+
+.flex{
+    display: flex;
+}
+
+.center{
+    justify-content: center;
+    align-items: center;
+}
+
+.left{
+    justify-content: flex-start;
+    align-items: flex-start;
+    
+}
+
+.right{
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.column{
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.row{
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.light,
+.light a{
+    color: #fff;
+}
+
+.dark,
+.dark a{
+    color: #444444;
+}
+
+.flex h1,
+.flex h3{
+    margin: 0;
+}
+
+.flex li,
+.flex p,
+.flex h1,
+.flex h3,
+.flex h2,
+.site-description{
+    font-family: 'Dosis', sans-serif;
+}
+
+h1{
+    padding: 20px;
+}
+
+.site-title{
+    max-width: 200px;
+    font-size: 32pt;
+    font-weight: bold;
+    font-family: 'Kalam', cursive !important; 
+    line-height: 0.7em;
+    text-align: center;
+}
+
+footer .site-title{
+    padding: 10px;
+}
+
+.site-description{
+    font-size: 14pt;
+}
+
+.site-page{
+    width: 100%;
+    background: #e6e6e6;
+}
+
+.current-page {
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
+    text-decoration-color: #20202023
+}
+
+.site-section{
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.image-container a img{
+    max-width: 450px;
+}
+
+.wide-card{
+    max-width: 1050px;
+    min-height: 150px;
+    min-width: 300px;
+}
+
+.gameplay-card,
+.tall-card{
+    text-align: center;
+}
+.tall-card{
+    
+    min-width: 250px;
+}
+
+
+.tall-card .card-content,
+.gameplay-card .card-content{
+    width:100%;
+    bottom: 0px;
+    position: absolute;
+    background-color: #fff;
+    height: 75px;
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+    cursor:pointer;
+    /*overflow: hidden;*/
+}
+
+.tall-card .card-content.expanded{
+    height: 200px;
+}
+
+.tall-card .card-content.card-content .card-description, .tall-card .card-content.card-content .card-extras{
+    display: none;
+}
+.tall-card .card-content.card-content.fullyExpanded .card-description{
+    display: initial;
+}
+.tall-card .card-content.card-content.fullyExpanded .card-extras{
+    display: flex;
+    align-content: center;
+}
+
+.tall-card .card-content.card-content.expanded .card-tip{
+    display: none;
+}
+
+.tall-card .card-content.card-content.tapped .card-tip{
+    display: none;
+}
+
+.tall-card .card-content.card-content .card-tip {
+    position: absolute;
+    width:100%;
+    z-index: 5;
+    bottom: 55px;
+}
+
+.card{
+    position: relative;
+    background: #fff;
+    margin: 15px;
+    border-radius: 3px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+.card.dark{
+    background-color: 222222;
+    background: #222222;
+}
+
+.video-container{
+    padding: 30px;
+}
+
+a{
+    cursor:pointer;
+}
+
+.card:hover{
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+.tall-card .card-image{
+    min-height: 325px;
+}
+
+.card-image img{
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    width: 100%;
+    display: block;
+}
+
+.card-image 
+
+.tall-card .card-image img{
+    max-width: 250px;
+    max-width: 250px;
+}
+.social-card .card-image img{
+    max-width: 75px;
+}
+
+.social-card .card-image{
+}
+
+.social-card .card-content h2{
+    width: 70%;
+}
+
+.social-card{
+    text-align: center;
+    width: 175px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gameplay-card{
+    width: 300px;
+    height: 266px;
+}
+
+.card-content{
+    position: relative;
+}
+
+.card-badge{
+    z-index: 1;
+    position: absolute;
+    background: white;
+    border-radius: 25px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.large-badge{
+    top: -20px;
+    right: 10px;
+    width: 50px;
+    height: 50px;
+}
+
+.mini-badge{
+    z-index: 1;
+    width: 30px;
+    height: 30px;
+    border-radius: 25px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    display: block;
+    margin: 3px;
+}
+
+.card-badge img, .card-badge svg{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+.large-badge img{
+    width: 35px;
+    margin-top: -18px;
+    margin-left: -18px;
+}
+.mini-badge img{
+    width: 20px;
+    margin-top: -9px;
+    margin-left: -11px;
+}
+.mini-badge svg{
+    margin-top: 7px;
+    
+}
+
+.mini-badge .svg-inline--fa.fa-lg{
+    margin-top: 4px;
+    margin-left: 1px;
+}
+
+.card-extras{
+    height: 45px;
+    width: 100%;
+    position: absolute;
+    padding: 5px;
+    bottom: 0;
+    box-sizing: border-box;
+}
+
+.tall-card .card-content a{
+    margin: 0;
+}
+
+.wide-card .card-content{
+    padding: 30px;
+}
+
+.flex a,
+.site-title{
+    margin: 0 15px 0 15px;
+}
+
+.flex .tall-card a{
+    margin: 0;
+}
+
+.site-description{
+    margin: 0 5px 0 5px;
+}
+
+.social-nav{
+    padding: 5px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.site-nav a:hover,
+.site-title a:hover,
+.social-nav a:hover{
+    filter: brightness(1.5);
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
+    text-decoration-color: #20202023
+}
+
+.card-extras a:hover{
+    border-bottom: none;
+}
+
+.flip{
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
+
+/*
+SCREEN SIZE
+*/
+
+/* smaller than 1024px */
+@media screen and (max-width: 1024px)
+{
+    /*
+    #social-nav
+    {
+        display: none;
+    }
+    */
+    header, footer
+    {
+        justify-content: center;
+    }
+}
+  
+/*smaller than 545px */
+@media screen and (max-width: 545px) 
+{
+    .site-title
+    {
+        font-size: 28pt;
+        text-align: center;
+        width: 100%;
+        margin: 0 10px 0 10px;
+    }
+
+    header
+    {
+        height: 8vh;
+
+    }
+
+    .site-page .row
+    {
+        /*flex-direction: column;*/
+    }
+
+    .card-extras.row
+    {
+        flex-direction: row;
+    }
+
+    .site-nav h3
+    {
+        font-size: 14pt;
+    }
+
+    h1
+    {
+        font-size: 21pt;
+    }
+}

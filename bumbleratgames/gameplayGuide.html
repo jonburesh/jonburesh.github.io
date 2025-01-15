@@ -1,0 +1,263 @@
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Pen+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap" rel="stylesheet">
+    <meta name="theme-color" content="#FFB900">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="google" content="notranslate">
+    <!-- font awesome -->
+    <script defer src="js/fontawesome-all.js"></script>
+    <!-- jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <!-- left section -->
+        <div class="flex row center dark site-nav">
+            <div class="logo-image">
+                <img src="imgs/bumblerat-logo.png">
+            </div>
+            <p class="site-title">BumbleRat Games</p>
+            <!--<p class="site-description">dev portfolio</p>-->
+            <a href="index.html" id="personal-button" onclick="pageSelected('page-personal', this);" class="current-page">
+                <h3>Starship Factory</h3>
+            </a>
+            <a href="index.html" id="experience-button" onclick="pageSelected('page-contact', this);">
+                <h3>Social / Contact </h3>
+            </a>
+        </div>
+    </header>
+    <content>
+        <div id="page-personal" class="site-page" style="display:block;">
+            <div class="site-section flex column center dark">
+                <div class="flex column dark center">
+                    <!-- Starship Factory 
+                    <div class="card wide-card dark">
+                        <div class="card-image">
+                            <img src="imgs/starship/1.png">
+                        </div>
+                        <div class="card-content light">
+                            <h3>In Development - Windows, macOS</h3>
+                            <p>As the architect of your very own version of Starbase, you’ll design, build, and manage a high-tech factory dedicated to the creation of the next generation of spaceflight. Construct the world's largest rocket ever made!</p>
+                        </div>
+                        
+                        <div class="card-badge large-badge" style="background-color: #000000;">
+                            <img src="imgs/steamIcon.png" >
+                        </div>
+                    </div>-->
+
+
+                    <h1>How To Play</h1>
+                    <div class="flex row dark center">
+                    <div class="card wide-card">
+                        <div class="card-content dark">
+                            <h2>Controls</h2>
+                            <h3>General</h3>
+                            <ul>
+                                <li>Left Mouse - Select objects</li>
+                                <li>Right Mouse / Backspace - Deselect object</li>
+                                <li>Tab - Swap to build site / launch pad</li>
+                                <li>, - Decrease simulation speed</li>
+                                <li>. - Increase simulation speed</li>
+                                <li>/ - Pause simulation</li>
+                                <li>Escape - Open menu</li>
+                                <li>F5 - Save game</li>
+                                <li>F7 - Load game</li>
+                                <li>F10 - Toggle UI</li>
+                            </ul>
+                            <h3>Camera</h3>
+                            <ul>
+                                <li>WASD / Arrow Keys - Camera movement</li>
+                                <li>Q / E - Camera height</li>
+                                <li>Middle Mouse / Alt - Rotate camera</li>
+                                <li>Hold Shift - Increase camera movement speed</li>
+                            </ul>
+                            <h3>Construction</h3>
+                            <ul>
+                                <li>Left Mouse / Spacebar - Place current building</li>
+                                <li>Right Mouse / Backspace - Cancel while building</li>
+                                <li>R / Scroll Wheel - Rotate building</li>
+                                <li>Hold Shift & Left Click - Place multiple buildings</li>
+                                <li>1, 2, 3, 4 - Swap between build types</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div style="padding: 40px; max-width: 1000px;">
+                        <h2>Gameplay Tutorial</h2>
+                        <p>In Starship Factory, your mission is to construct and streamline the production line for the world's largest rocket: Starship. For the time being, we will start with the legendary StarHopper. We won't get very far into production without first obtaining some raw materials. Raw materials are delivered to your factory's build site. Build a Delivery Platform and select Raw Steel. After a short time, the delivery will arrive.</p>
+
+                        <div class="flex row dark center">
+                        <div class="card gameplay-card dark">
+                            <div class="card-image">
+                                <img src="imgs/starship/tutorial/building.png">
+                            </div>
+                            <div class="card-content dark">
+                                <h2>Build mode</h2>
+                            </div>
+                        </div>
+                        <div class="card gameplay-card dark">
+                            <div class="card-image">
+                                <img src="imgs/starship/tutorial/deliveryPlatform.png">
+                            </div>
+                            <div class="card-content dark">
+                                <h2>Delivery Platform</h2>
+                            </div>
+                        </div>
+                        <div class="card gameplay-card dark">
+                            <div class="card-image">
+                                <img src="imgs/starship/tutorial/rawSteel.png">
+                            </div>
+                            <div class="card-content dark">
+                                <h2>Raw Steel</h2>
+                            </div>
+                        </div>
+                        </div>
+                        <h2>Building StarHopper</h2>
+                        <p>Now that steel is available, we need to turn Raw Steel into Steel Rings. This process occurs at the Fabricator. Construct one not too far away from the Delivery Platform. A Crane Worker will bring the Steel to the Fabricator. Workers are crucial to the operation of your factory and are hired from the Logistics building.</p>
+                        <p>Make sure to keep the Fabricator producing Steel Rings. To build StarHopper, we will need a total of 6 Steel Rings. These rings will be turned into two 3 Stacks.</p>
+                        <div class="flex row dark center">
+                            <div class="card gameplay-card dark">
+                                <div class="card-image">
+                                    <img src="imgs/starship/tutorial/fabricator.png">
+                                </div>
+                                <div class="card-content dark">
+                                    <h2>Fabricator</h2>
+                                </div>
+                            </div>
+                            <div class="card gameplay-card dark">
+                                <div class="card-image">
+                                    <img src="imgs/starship/tutorial/steelRing.png">
+                                </div>
+                                <div class="card-content dark">
+                                    <h2>Steel Ring</h2>
+                                </div>
+                            </div>
+                            <div class="card gameplay-card dark">
+                                <div class="card-image">
+                                    <img src="imgs/starship/tutorial/logistics.png">
+                                </div>
+                                <div class="card-content dark">
+                                    <h2>Logistics</h2>
+                                </div>
+                            </div>
+                            </div>
+
+                        </div>
+                        <div style="max-width: 1000px;">
+                            <h2>Welding Ring Sections</h2>
+                            <p>Let's start welding some Steel Rings together to form the body of StarHopper. Build a Stack Welder somewhere close to the Fabricator. Next, we need to create a couple 2 Stacks. A 2 Stack consists of two Steel Rings welded together. Once selected, workers will bring the Steel Rings from the Fabricator to the Stack Welder. Create two 2 Stacks.</p>
+
+                            <p>Next we will turn the 2 Stacks into 3 Stacks. We need to weld another Steel Ring onto each of the 2 Stacks.</p>
+                            <p>Lastly, set your Stack Welder to assemble the StarHopper Tank to weld everything together. Once completed, StarHopper can be sent to the launch site to test or build a Nosecone to stack onto it.</p>
+                            <p>Starship Factory allows players to follow SpaceX's trajectory or pioneer their own direction!</p>
+                            <div class="flex row dark center">
+                                <div class="card gameplay-card dark">
+                                    <div class="card-image">
+                                        <img src="imgs/starship/tutorial/stackWelder.png">
+                                    </div>
+                                    <div class="card-content dark">
+                                        <h2>Stack Welder</h2>
+                                    </div>
+                                </div>
+                                <div class="card gameplay-card dark">
+                                    <div class="card-image">
+                                        <img src="imgs/starship/tutorial/2stackRing.png">
+                                    </div>
+                                    <div class="card-content dark">
+                                        <h2>2 Stack</h2>
+                                    </div>
+                                </div>
+                                <div class="card gameplay-card dark">
+                                    <div class="card-image">
+                                        <img src="imgs/starship/tutorial/3ringStack.png">
+                                    </div>
+                                    <div class="card-content dark">
+                                        <h2>3 Stack</h2>
+                                    </div>
+                                </div>
+                                <div class="card gameplay-card dark">
+                                    <div class="card-image">
+                                        <img src="imgs/starship/tutorial/starHopperTank.png">
+                                    </div>
+                                    <div class="card-content dark">
+                                        <h2>StarHopper</h2>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+
+
+
+
+                    </div>
+                </div>
+            </div>
+            </div>
+            </div>
+    </content>
+
+    <!-- footer section -->
+    <footer>
+        <div class="logo-image flip" style="position: relative;right: 200;">
+            <img src="imgs/bumblerat-logo.png">
+        </div>
+        <div class="flex column center dark">
+            <p class="site-title">BumbleRat Games</p>
+            <div class="social-nav flex row center dark">
+                <a href="http://twitter.com/jon_buresh" target="_blank">
+                    <h3><i class="fa-solid fa-mug-hot"></i> support on ko-fi</h3>
+                </a>
+                <a href="https://discord.gg/jCqhzVT" target="_blank">
+                    <h3><i class="fab fa-discord"></i> join the discord</h3>
+                </a>
+                <!--<a href="https://www.linkedin.com/in/jonathan-buresh-31b4152b/" target="_blank">
+                    <h3><i class="fa-solid fa-newspaper"></i> newsletter</h3>
+                </a>-->
+                <a href="https://www.youtube.com/@JonBuresh" target="_blank">
+                    <h3><i class="fab fa-youtube"></i> youtube</h3>
+                </a>
+            </div>
+            <div class="social-nav flex row center dark">
+                <a href="http://twitter.com/jon_buresh" target="_blank">
+                    <h3><i class="fab fa-twitter"></i> twitter / X</h3>
+                </a>
+                <a href="https://www.twitch.tv/bumblerat" target="_blank">
+                    <h3><i class="fab fa-twitch"></i> twitch</h3>
+                </a>
+                <a href="mailto:bumbleratgames@gmail.com" target="_blank">
+                    <h3><i class="fa-solid fa-newspaper"></i> email</h3>
+                </a>
+            </div>
+            <h2>Starship Factory</h2>
+            <div class="social-nav flex row center dark">
+                <a href="https://store.steampowered.com/app/2940340/Starship_Factory/?beta=1" target="_blank">
+                    <h3><i class="fab fa-steam"></i> steam</h3>
+                </a>
+                <a href="https://jonburesh.itch.io/starship-factory" target="_blank">
+                    <h3><i class="fab fa-itch-io"></i> itch.io</h3>
+                </a>
+                <a href="gameplayGuide.html" target="_blank">
+                    <h3><i class="fa-solid fa-circle-question"></i> how to play</h3>
+                </a>
+                <a href="https://trello.com/b/nN74UVwC/starship-factory-public" target="_blank">
+                    <h3><i class="fab fa-trello"></i> trello</h3>
+                </a>
+                <!--
+                <a href="http://twitter.com/jon_buresh" target="_blank">
+                    <h3><i class="fa-solid fa-mug-hot"></i> press kit</h3>
+                </a>-->
+            </div>
+            <p>© 2025</p>
+        </div>
+    </footer>
+
+</body>
+<!-- controller js -->
+<script src="js/main.js"></script>
+
+</html>
