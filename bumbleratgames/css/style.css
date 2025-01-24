@@ -101,7 +101,7 @@ h1{
 }
 
 footer .site-title{
-    padding: 10px;
+    padding: 30px;
 }
 
 .site-description{
@@ -333,6 +333,10 @@ a{
     margin: 0 15px 0 15px;
 }
 
+.site-title{
+    cursor: default;
+}
+
 .flex .tall-card a{
     margin: 0;
 }
@@ -349,13 +353,23 @@ a {
     text-decoration: none;
 }
 
+.logo-image img{
+    width: 75px;
+}
+
+.logo-image img:hover{
+    -webkit-transform: scale(0.95);
+    transform: scale(0.95);
+    transition: 0.3s;
+}
+
 .site-nav a:hover,
 .site-title a:hover,
 .social-nav a:hover{
     filter: brightness(1.5);
     text-decoration: underline;
     text-decoration-thickness: 3px;
-    text-decoration-color: #20202023
+    transition: 0.3s;
 }
 
 .card-extras a:hover{

@@ -1,5 +1,4 @@
 <html>
-
 <head>
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
@@ -12,6 +11,15 @@
     <script defer src="js/fontawesome-all.js"></script>
     <!-- jquery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-JYKKGBK3V4"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-JYKKGBK3V4');
+    </script>
+    
 </head>
 
 <body>
@@ -19,7 +27,7 @@
         <!-- left section -->
         <div class="flex row center dark site-nav">
             <div class="logo-image">
-                <img src="imgs/bumblerat-logo.png">
+                <a href="https://bumbleratgames.com"><img src="imgs/bumblerat-logo.png"></a>
             </div>
             <p class="site-title">BumbleRat Games</p>
             <!--<p class="site-description">dev portfolio</p>-->
@@ -43,7 +51,7 @@
                         </div>
                         <div class="card-content light">
                             <h3>In Development - Windows, macOS</h3>
-                            <p>In Starship Factory, your mission is to build and streamline the production line for the world's largest rocket, the Starship. As the creative force behind your own Starbase, you’ll design, build, and manage a factory dedicated to space exploration.</p>
+                            <p>Starship Factory is a construction / space simulation game where you build, test, and optimize rocket production for Mars colonization. Dive into the challenge of constructing and optimizing the production line for the world's most powerful rocket, Starship. As the manager of your own Starbase, you’ll build the factory, tank farm, launch mounts, and vehicles necessary for the colonization of Mars!</p>
                         </div>
 
                         <div class="card-badge large-badge" style="background-color: #000000;">
@@ -57,7 +65,7 @@
                     <div class="flex row dark center">
 
                         <!-- STEAM -->
-                        <a href="https://store.steampowered.com/app/2940340/Starship_Factory/?beta=1" target="_blank">
+                        <a href="https://store.steampowered.com/app/2940340/Starship_Factory" target="_blank">
                             <div class="card social-card" style="background-color: #1e2124;">
 
                                 <div class="card-content flex column center light">
@@ -116,16 +124,14 @@
                     <div class="card wide-card">
                         <div class="card-content dark">
                             <h2>Build Your Factory:</h2>
-                            <p>Start with an empty plot and turn it into a lively hub of aerospace activity. Construct mega-bays, launch mounts, and tank farms. Set up efficient production lines and streamline your workflow to craft advanced spacecraft.</p>
-                            <h2>Test and Launch:</h2>
-                            <p>It's more than just factory efficiency—it's about creating history. Put your creations to the test at the launch site, tracking with telemetry and cameras as they fly. Tweak your factory design based on real-time feedback and aim for a flawless launch.</p>
-                            <h2>Survive the Final Frontier:</h2>
-                            <p>Space is unforgiving. Will your Starships withstand the journey? It's up to you to build vessels strong enough to explore space and begin the journey to Mars.</p>
+                            <p>Transform an empty plot into a bustling hub of productivity with cutting-edge technology. Optimize your factory to accelerate the production of ships required for the journey to Mars.</p>
+                            <h2>Test, Launch, Iterate:</h2>
+                            <p>Space is unforgiving, and it's up to you to create vehicles resilient enough to withstand the rigors of spaceflight. Put your creations to the test at the launch site, utilizing telemetry and cameras to track their progress. Refine your factory design based on real-time feedback to achieve flawless flights.</p>
                             <h2>Key Features:</h2>
-                                <li>Versatile building system enabling countless factory layouts and configurations</li>
+                                <li>Versatile factory and launch site construction enabling countless layouts and configurations</li>
                                 <li>An extensive inventory of resources, propellants, and vehicle components for assembly and management</li>
-                                <li>Nine fully functional vehicles, each with the ability to perform spaceflight testing.</li>
-                                <li>Ten distinct test scenarios, from static fires to 200-meter hops and 10-kilometer belly-flop landings</li>
+                                <li>Nine fully functional vehicles, each with their own test campaigns.</li>
+                                <li>Ten distinct test scenarios, from propellant load to 200-meter hops and 10-kilometer belly-flop landings</li>
                             <h2>Roadmap:</h2>
                                 <li>Orbital Launches</li>
                                 <li>OLT Catches</li>
@@ -137,6 +143,13 @@
                     <h1>Media</h1>
 
                     <div class="card-content flex row center">
+                        <div class="video-container">
+                            <iframe width="560" height="315"
+                                src="https://www.youtube.com/embed/KxCmf3vOfZo?si=_Lrzanm5dUU"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
                         <div class="video-container">
                             <iframe width="560" height="315"
                                 src="https://www.youtube.com/embed/KxCmf3vOfZo?si=lnTwfZd4mlQMOzOH"
@@ -182,102 +195,20 @@
         <div id="page-contact" class="site-page" style="display:none;">
             <div class="site-section flex column center dark">
 
-                <h1>Follow BumbleRat</h1>
+                <h1>About BumbleRat</h1>
                 <div class="flex row dark center" style="max-width: 45%;">
-
-                    <!-- YOUTUBE -->
-                    <a href="https://www.youtube.com/@JonBuresh" target="_blank">
-                        <div class="card social-card" style="background-color: #FF0000;">
-
-                            <div class="card-content flex column center light">
-                                <div class="card-image">
-                                    <img src="imgs/youTubeLogo.png">
-                                </div>
-                                <h2>Subscribe on YouTube</h2>
-                            </div>
+                    <div class="card wide-card">
+                        <div class="card-content dark">
+                            <h2>Hobby Game Development</h2>
+                            <p>BumbleRat Games is dedicated to delivering exceptional indie games without the compromises often seen in the AAA video game industry. We build our games in collaboration with players, whose feedback is crucial in the development of a well-crafted game.</p>
+                            <h2>Funded through gamers</h2>
+                            <p>Operating independently without investors, boards of directors, or parent companies, BumbleRat Games relies on support from players who recognize the value of indie game development.</p>
+                            <h2>Fully Baked Releases</h2>
+                            <p>Games from BumbleRat Games are released as complete products, not rushed to market before they are fully developed.</p>
+                            <h2>Learn More</h2>
+                            <p>To support, contact, or follow BumbleRat Games, please refer to the information below!</p>
                         </div>
-                    </a>
-                    <!-- / YOUTUBE -->
-
-                    <!-- ITCH -->
-                    <a href="https://jonburesh.itch.io/" target="_blank">
-                        <div class="card social-card" style="background-color: #fa5c5c;">
-                            <div class="card-content flex column center light">
-                                <div class="card-image">
-                                    <img src="imgs/itchIcon.png">
-                                </div>
-                                <h2>Follow on itch.io</h2>
-                            </div>
-                        </div>
-                    </a>
-                    <!-- / ITCH -->
-
-                    <!-- DISCORD -->
-                    <a href="https://discord.gg/jCqhzVT" target="_blank">
-                        <div class="card social-card" style="background-color: #7289da;">
-                            <div class="card-content flex column center light">
-                                <div class="card-image">
-                                    <img src="imgs/discordIcon.png">
-                                </div>
-                                <h2>Join the Discord</h2>
-                            </div>
-                        </div>
-                    </a>
-                    <!-- / DISCORD -->
-
-                    <!-- STEAM -->
-                    <a href="https://store.steampowered.com/app/2940340/Starship_Factory/?beta=1" target="_blank">
-                        <div class="card social-card" style="background-color: #1e2124;">
-
-                            <div class="card-content flex column center light">
-                                <div class="card-image">
-                                    <img src="imgs/steamIcon.png">
-                                </div>
-                                <h2>Wishlist on Steam!</h2>
-                            </div>
-                        </div>
-                    </a>
-                    <!-- / STEAM -->
-
-                    <!-- KO FI -->
-                    <a href="https://ko-fi.com/bumblerat" target="_blank">
-                        <div class="card social-card" style="background-color: #72A5F2;">
-                            <div class="card-content flex column center light">
-                                <div class="card-image">
-                                    <img src="imgs/kofi-logo.png">
-                                </div>
-                                <h2>Support on Ko-Fi</h2>
-                            </div>
-                        </div>
-                    </a>
-                    <!-- / KO FI -->
-
-                    <!-- Newsletter -->
-                    <a href="https://ko-fi.com/bumblerat" target="_blank">
-                        <div class="card social-card" style="background-color: #2e449b;">
-                            <div class="card-content flex column center light">
-                                <div class="card-image">
-                                    <img src="imgs/mailIcon.png">
-                                </div>
-                                <h2>Join the Newsletter</h2>
-                            </div>
-                        </div>
-                    </a>
-                    <!-- / Newsletter -->
-
-                    <!-- X -->
-                    <a href="https://x.com/jon_buresh" target="_blank">
-                        <div class="card social-card" style="background-color: #000000;">
-                            <div class="card-content flex column center light">
-                                <div class="card-image">
-                                    <img src="imgs/twitter-x-logo.png">
-                                </div>
-                                <h2>Follow on Twitter/X</h2>
-                            </div>
-                        </div>
-                    </a>
-                    <!-- / X -->
-
+                    </div>
                 </div>
 
             </div>
@@ -287,13 +218,18 @@
 
     <!-- footer section -->
     <footer>
-        <div class="logo-image flip" style="position: relative;right: 200;">
-            <img src="imgs/bumblerat-logo.png">
-        </div>
         <div class="flex column center dark">
-            <p class="site-title">BumbleRat Games</p>
+            <div style="position: relative;">
+                <div class="logo-image" style="position: absolute; right: 300px;">
+                    <a href="http:bumbleratgames.com"><img src="imgs/bumblerat-logo.png"></a>
+                </div>
+                <div class="logo-image flip" style="position: absolute; left: 300px;">
+                    <a href="http:bumbleratgames.com"><img src="imgs/bumblerat-logo.png"></a>
+                </div>
+                <p class="site-title">BumbleRat Games</p>
+            </div>
             <div class="social-nav flex row center dark">
-                <a href="http://twitter.com/jon_buresh" target="_blank">
+                <a href="https://ko-fi.com/bumblerat" target="_blank">
                     <h3><i class="fa-solid fa-mug-hot"></i> support on ko-fi</h3>
                 </a>
                 <a href="https://discord.gg/jCqhzVT" target="_blank">
@@ -303,7 +239,7 @@
                     <h3><i class="fa-solid fa-newspaper"></i> newsletter</h3>
                 </a>-->
                 <a href="https://www.youtube.com/@JonBuresh" target="_blank">
-                    <h3><i class="fab fa-youtube"></i> youtube</h3>
+                    <h3><i class="fab fa-youtube"></i> subscribe on youtube</h3>
                 </a>
             </div>
             <div class="social-nav flex row center dark">
@@ -319,7 +255,7 @@
             </div>
             <h2>Starship Factory</h2>
             <div class="social-nav flex row center dark">
-                <a href="https://store.steampowered.com/app/2940340/Starship_Factory/?beta=1" target="_blank">
+                <a href="https://store.steampowered.com/app/2940340/Starship_Factory" target="_blank">
                     <h3><i class="fab fa-steam"></i> steam</h3>
                 </a>
                 <a href="https://jonburesh.itch.io/starship-factory" target="_blank">
@@ -336,7 +272,7 @@
                     <h3><i class="fa-solid fa-mug-hot"></i> press kit</h3>
                 </a>-->
             </div>
-            <p>© 2025</p>
+            <p>© BumbleRatGames LLC 2025</p>
         </div>
     </footer>
 
